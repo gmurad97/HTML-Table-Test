@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px auto;
+    padding: 0px;
+    background: linear-gradient(45deg, rgba(67, 87, 208, 1) 0%, rgba(200, 80, 195, 1) 100%);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-container{
+    display: table;
+    margin: 100px auto;
+}
+
+.table-container > table{
+    border-spacing: 0px;
+}
+
+/*BEGIN - TABLE HEADER*/
+.table-container > table > thead > tr > th{
+    background-color: #352F4B;
+    font-family: "Tahoma";
+    font-weight: lighter;
+    text-align: left;
+    color: #FFFFFF;
+    height: 50px;
+}
+
+.table-container > table > thead > tr > th:nth-child(1){
+    width: 200px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:nth-child(2){
+    width: 100px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:nth-child(3){
+    width: 100px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:nth-child(4){
+    width: 150px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:nth-child(5){
+    width: 80px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:nth-child(6){
+    width: 60px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:first-child{
+    background-color: #352F4B;
+    border-radius: 10px 0px 0px 0px;
+    padding-left: 20px;
+}
+
+.table-container > table > thead > tr > th:last-child{
+    background-color: #352F4B;
+    border-radius: 0px 10px 0px 0px;
+    padding-right: 20px;
+}
+/*END - TABLE HEADER*/
+
+/*BEGIN - TABLE BODY*/
+.table-container > table > tbody > tr{
+    font-family: "Tahoma";
+    font-size: 15px;
+    font-weight: 300;
+    color: #8F8F8F;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.table-container > table > tbody > tr:hover{
+    color: #505050;
+}
+
+.table-container > table > tbody > tr > td{
+    padding-left: 20px;
+}
+
+.table-container > table > tbody > tr:nth-child(even){
+    background-color: #FFFFFF;
+}
+
+.table-container > table > tbody > tr:nth-child(odd){
+    background-color: #EBEBEB;
+}
+
+/*This is my brilliant idea at 5 o'clock in the morning ^_^*/
+.table-container > table > tbody > tr:last-child td:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+/*And This :D*/
+.table-container > table > tbody > tr:last-child td:last-child{
+    border-radius: 0px 0px 10px 0px;
+}
+/*END - TABLE BODY*/
